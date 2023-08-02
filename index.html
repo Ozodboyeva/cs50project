@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--main section-->
+    <main class="app">
+      <!--greeting section-->
+      <section class="greeting">
+        <h2 class="titele">
+          What's up, <input type="text" id="name" placeholder="Name here" />
+        </h2>
+      </section>
+      <!--greeting section done-->
+
+      <!--section create to do list-->
+      <section class="create-todo">
+        <h3>Vazifalringizni belhilang</h3>
+        <form id="new-todo-form">
+          <h4>Sizining vazifangiz</h4>
+          <input
+            type="text"
+            name="content"
+            id="content"
+            placeholder="vazifangizni kiriting"
+          />
+          <h4>Ro'yhatni tuzing</h4>
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category1"
+                value="business"
+              />
+              <span class="bubble business"></span>
+              <div>Business</div>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <div>Personal</div>
+            </label>
+          </div>
+          <input type="submit" value="Add todo" />
+        </form>
+      </section>
+      <!--section create to do list done-->
+
+      <!--section create to do list-->
+      <section class="todo-list">
+        <h3>Szining ro'yhatingiz</h3>
+        <div class="list" id="todo-list">
+          <div class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span class="bubble business"></span>
+            </label>
+            <div class="todo-content">
+              <input type="text" value="Make a video" readonly />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="todo-item">
+          <label>
+            <input type="checkbox" />
+            <span class="bubble personal"></span>
+          </label>
+          <div class="todo-content">
+            <input type="text" value="kitob o'qish" readonly />
+          </div>
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
